@@ -23,11 +23,13 @@ class TransactionHandler(object):
 
 tx_handler = TransactionHandler()
 
+
 @tx_handler.wrap
 def save_into_db(value):
     if not value:
         raise ValueError("Must be true")
     else:
         print("Saving value")
+
 
 save_into_db(value=True)

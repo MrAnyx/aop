@@ -1,4 +1,3 @@
-
 def simple_decorator(func):
     def wrapper():
         print("before")
@@ -7,8 +6,10 @@ def simple_decorator(func):
 
     return wrapper
 
+
 @simple_decorator
 def test():
     print("inside")
+
 
 test()

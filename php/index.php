@@ -17,5 +17,5 @@ $applicationAspectKernel->init([
         'appDir' => "/"
 ]);
 
-$user = new User("Robin", "Bidanchon");
+$user = new User("John", "Doe");
 echo $user->displayInfo();
