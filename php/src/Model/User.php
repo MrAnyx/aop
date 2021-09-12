@@ -33,11 +33,9 @@ class User {
    }
 
    /**
-    * Display info about the user
     * @Logging
-    * @return string
     */
    public function displayInfo(): string {
-      return printf("Bonjour, je m'appelle %s %s", $this->firstname, $this->lastname);
+      return printf("Hi, my name is %s %s", $this->firstname, $this->lastname);
    }
 }

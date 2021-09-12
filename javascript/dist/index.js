@@ -5,17 +5,16 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 import { afterMethod } from "kaop-ts";
-var double = afterMethod(function (meta) { return (meta.result *= 2); });
-var DummyExample = /** @class */ (function () {
-    function DummyExample() {
+var upper = afterMethod(function (meta) { return (meta.result = meta.result.toUpperCase()); });
+var Greating = /** @class */ (function () {
+    function Greating() {
     }
-    DummyExample.calculateSomething = function (num, num2) {
-        return num * num2;
+    Greating.sayHello = function (firstname, lastname) {
+        return "Hi, my name is " + firstname + " " + lastname;
     };
     __decorate([
-        double
-    ], DummyExample, "calculateSomething", null);
-    return DummyExample;
+        upper
+    ], Greating, "sayHello", null);
+    return Greating;
 }());
-console.log(DummyExample.calculateSomething(3, 3));
-console.log(DummyExample.calculateSomething(5, 5));
+console.log(Greating.sayHello("John", "Doe"));
