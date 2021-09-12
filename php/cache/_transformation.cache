@@ -1,0 +1,17 @@
+<?php return array (
+  AOP_ROOT_DIR . '\\src\\Aspect\\LoggingAspect.php' => 
+  array (
+    'filemtime' => 1631477066,
+    'cacheUri' => NULL,
+  ),
+  AOP_ROOT_DIR . '\\src\\Annotation\\Logging.php' => 
+  array (
+    'filemtime' => 1631477066,
+    'cacheUri' => NULL,
+  ),
+  AOP_ROOT_DIR . '\\src\\Model\\User.php' => 
+  array (
+    'filemtime' => 1631477066,
+    'cacheUri' => AOP_CACHE_DIR . '\\src\\Model\\User.php',
+  ),
+);

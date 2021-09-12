@@ -1,0 +1,11 @@
+{
+    "name": "bidanchr/aop",
+    "require": {
+        "lisachenko/go-aop-php": "^2.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    }
+}

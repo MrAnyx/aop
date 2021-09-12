@@ -1,6 +1,6 @@
 class TransactionHandler(object):
     def wrap(self, func):
-        def wrapper(*args, **kwargs): # Standard python varargs notation
+        def wrapper(*args, **kwargs):
             self.start_transaction()
             try:
                 func(*args, **kwargs)
@@ -21,17 +21,13 @@ class TransactionHandler(object):
         print("Rollback")
 
 
-# And later...
 tx_handler = TransactionHandler()
 
 @tx_handler.wrap
 def save_into_db(value):
-    # Verify that the data is correct.
-    # In our case, it must be true, otherwise an error occurs
     if not value:
         raise ValueError("Must be true")
     else:
-        print("Saving value") # Imagine we save this into database
+        print("Saving value")
 
-
-save_into_db(value=False)
+save_into_db(value=True)
