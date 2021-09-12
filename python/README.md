@@ -1,21 +1,14 @@
 # Aspect oriented programming
 
-This project contains multiple example of how to use aspect in Python, PHP and Javascript (Typescript).
+This project contains multiple example of how to use aspect in Python.
 In order to make it work, you'll need to install some few libraries.
 
 ## Prerequisites
 
 - Python >= 3.9
 - pip >= 21.2
-- PHP >= 7.4
-- Composer
-- Typescript >= 4.4
-- Node >= 14.17
-- npm >= 6.14
 
 ## Python
-
-> 💡 Make sure to be in the `python` folder.
 
 1. Create the virtual environment
 
@@ -40,38 +33,6 @@ Then you'll be able to try each script using the following command.
 
 ```bash
 python script_name.py
-```
-
-### PHP
-
-> 💡 Make sure to be in the `python` folder.
-
-1. Install the libraries
-
-```bash
-composer install
-```
-
-You should be able to start the script using the following.
-
-```bash
-php index.php
-```
-
-### Typescript
-
-> 💡 Make sure to be in the `typescript` folder.
-
-1. Install the libraries
-
-```bash
-npm install
-```
-
-Then, you should be able to start the script using the following.
-
-```bash
-node dist/index.js
 ```
 
 ## References
