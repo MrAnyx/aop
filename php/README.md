@@ -10,7 +10,7 @@ In order to make it work, you'll need to install some few libraries.
 
 ### PHP
 
-> 💡 Make sure to be in the `python` folder.
+> 💡 Make sure to be in the `php` folder.
 
 1. Install the libraries
 
